@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    "docker:enableMajor",
+    "docker:pinDigests",
+    ":automergeDigest",
+    ":enablePreCommit",
+    "github>AkashRajvanshi/renovate-config:commit-message",
+    "github>AkashRajvanshi/renovate-config:pr-labels",
+    "github>AkashRajvanshi/renovate-config:semantic-commits",
+    "github>AkashRajvanshi/renovate-config:generic-regex-manager"
+  ],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "timezone": "Asia/Kolkata",
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "commitBodyTable": true,
+  "rebaseWhen": "conflicted"
+}
